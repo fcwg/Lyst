@@ -20,7 +20,7 @@ app.get('/api/items', itemsController.list);
 app.post('/api/items', itemsController.create);
 app.delete('/api/items', itemsController.delete);
 
-app.listen(3000, function() {
+app.listen(8000, function() {
 	console.log("I am listening and listening some more");
 });
 
