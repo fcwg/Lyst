@@ -6,7 +6,7 @@ var mongoose = require('mongoose');
 
 var port = process.env.PORT || 3000;
 
-app.set(\'port\', process.env.PORT || 3000;);
+app.set('port', process.env.PORT || 3000);
 
 mongoose.connect('mongodb://localhost:27017/shoppinglist');
 
