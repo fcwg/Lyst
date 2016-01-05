@@ -22,5 +22,5 @@ app.delete('/api/items', itemsController.delete);
 
 app.listen(3000, function() {
 	console.log("I am listening and listening some more");
-})
+});
 
