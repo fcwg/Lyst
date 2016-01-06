@@ -8,7 +8,7 @@ var port = process.env.PORT || 3000;
 
 app.set('port', process.env.PORT || 3000);
 
-mongoose.connect('mongodb://localhost:27017/shoppinglist');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost:27017/shoppinglist');
 
 app.get('/', function(req, res) {
 	res.sendFile(__dirname + '/client/views/index.html');
